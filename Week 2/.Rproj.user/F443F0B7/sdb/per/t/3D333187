@@ -1,0 +1,18 @@
+{
+    "contents" : "pollutantmean <- function (directory, pollutant, monitorIds = 1:332) {\n    \n    monitorData <- function(id, directory) {\n        \n        fileName <- formatC(id, width=3, format=\"d\", flag=\"0\")\n        filePath <- paste(directory, '/', fileName, '.csv', sep='')\n        \n        result = read.csv(filePath)\n    }\n    \n    for (id in monitorIds) {\n        if (!exists(\"readings\")) readings = monitorData(id, directory) \n        else readings = rbind(readings, monitorData(id, directory))\n    }\n\n    mean(readings[[pollutant]][!is.na(readings[[pollutant]])])\n}",
+    "created" : 1442259886273.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4015286545",
+    "id" : "3D333187",
+    "lastKnownWriteTime" : 1442359291,
+    "path" : "C:/Data Science/RStudio/Week 2/pollutantmean.R",
+    "project_path" : "pollutantmean.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

@@ -1,0 +1,18 @@
+{
+    "contents" : "source(\"corr.R\")\nsource(\"complete.R\")\ncr <- corr(\"specdata\", 150)\nhead(cr)\nsummary(cr)\ncr <- corr(\"specdata\", 400)\nhead(cr)\nsummary(cr)\ncr <- corr(\"specdata\", 5000)\nsummary(cr)\nlength(cr)\ncr <- corr(\"specdata\")\nsummary(cr)\nlength(cr)",
+    "created" : 1442355129911.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2666051905",
+    "id" : "48D93125",
+    "lastKnownWriteTime" : 1442355793,
+    "path" : "C:/Data Science/RStudio/Week 2/corrTest.R",
+    "project_path" : "corrTest.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,18 @@
+{
+    "contents" : "source(\"pollutantmean.R\")\npollutantmean(\"specdata\", \"sulfate\", 1:10)\n\n## [1] 4.064\n\npollutantmean(\"specdata\", \"nitrate\", 70:72)\n\n## [1] 1.706\n\npollutantmean(\"specdata\", \"nitrate\", 23)\n\n## [1] 1.281",
+    "created" : 1442357878194.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1812863525",
+    "id" : "458C93BF",
+    "lastKnownWriteTime" : 1442357912,
+    "path" : "C:/Data Science/RStudio/Week 2/pollutantmeanTest.R",
+    "project_path" : "pollutantmeanTest.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

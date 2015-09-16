@@ -1,0 +1,18 @@
+{
+    "contents" : "monitorData <- function(id, directory) {\n    \n    fileName <- formatC(id, width=3, format=\"d\", flag=\"0\")\n    filePath <- paste(directory, '/', fileName, '.csv', sep='')\n    \n    result = read.csv(filePath)\n}",
+    "created" : 1442351104225.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2533988460",
+    "id" : "65939A4D",
+    "lastKnownWriteTime" : 1442357996,
+    "path" : "C:/Data Science/RStudio/Week 2/monitorData.R",
+    "project_path" : "monitorData.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

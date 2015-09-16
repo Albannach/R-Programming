@@ -1,0 +1,18 @@
+{
+    "contents" : "complete <- function(directory, monitorIds = 1:332) {\n    \n    monitorData <- function(id, directory) {\n        \n        fileName <- formatC(id, width=3, format=\"d\", flag=\"0\")\n        filePath <- paste(directory, '/', fileName, '.csv', sep='')\n        \n        result = read.csv(filePath)\n    }\n    \n    completedObservations <- data.frame(id=integer(0), nobs=integer(0))\n    \n    for (id in monitorIds) {\n        completed <- complete.cases(monitorData(id, directory))\n        newRow <- c(id, length(completed[completed == TRUE]))\n        completedObservations[nrow(completedObservations) + 1, ] <- newRow\n    }\n    \n    completedObservations\n}",
+    "created" : 1442266414458.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3280175099",
+    "id" : "2BE81F2B",
+    "lastKnownWriteTime" : 1442356946,
+    "path" : "C:/Data Science/RStudio/Week 2/complete.R",
+    "project_path" : "complete.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

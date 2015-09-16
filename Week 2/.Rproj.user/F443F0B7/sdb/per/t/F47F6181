@@ -1,0 +1,18 @@
+{
+    "contents" : "corr <- function(directory, threshold = 0) {\n    \n    monitorData <- function(id, directory) {\n        \n        fileName <- formatC(id, width=3, format=\"d\", flag=\"0\")\n        filePath <- paste(directory, '/', fileName, '.csv', sep='')\n        \n        result = read.csv(filePath)\n    }\n    \n    result <- numeric()\n    \n    for (id in subset(complete(directory), nobs > threshold)$id) {\n        data <- monitorData(id, directory)\n        completeData <- subset(data, !is.na(sulfate) & !is.na(nitrate))\n        result <- c(result, cor(completeData$sulfate, completeData$nitrate))\n    }\n\n    result\n}",
+    "created" : 1442347075039.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1267762996",
+    "id" : "F47F6181",
+    "lastKnownWriteTime" : 1442358669,
+    "path" : "C:/Data Science/RStudio/Week 2/corr.R",
+    "project_path" : "corr.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : true,
+    "type" : "r_source"
+}
